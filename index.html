@@ -23,7 +23,6 @@
             align-items: center; /* Căn giữa theo chiều dọc */
             font-family: Arial, sans-serif;
             font-size: 14px;
-            border-bottom: 1px solid #ddd; /* Đường viền dưới */
         }
 
         /* Ngày tháng ở bên trái */
@@ -54,10 +53,6 @@
             height: 14px;
             margin-right: 8px; /* Khoảng cách giữa cờ và chữ */
             border-radius: 2px;
-        }
-
-        .topbar-lang a:hover {
-            background: #f0f0f0; /* Hiệu ứng hover */
         }
 
         /* Phần nội dung trang */
@@ -91,9 +86,6 @@
 
     <!-- Nội dung trang -->
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dải nền kéo dài</title>
     <style>
         body {
             background-color: white;
@@ -108,12 +100,15 @@
             padding: 50px 0;
             width: 100vw; /* Chiều rộng toàn màn hình */
         }
+        .highlight {
+            color: white;
+        }
     </style>
 </head>
 <body>
 
     <div class="full-width-section">
-        <h1 id="heading" class="highlight">BẠO LỰC MẠNG: LỜI NÓI ẢO NỖI ĐAU THẬT </h1>
+        <h1 id="heading" class="highlight">BẠO LỰC MẠNG: LỜI NÓI ẢO NỖI ĐAU THẬT</h1>
     </div>
 
 </body>
@@ -266,6 +261,9 @@
     <nav class="navbar">
         <ul>
             <li onmouseenter="showMenu('menu1')" onmouseleave="hideMenu('menu1')">
+                <a href="#"><a href="https://baolucmang.github.io/12a12.nhomphongsu/#" target="_blank">TRANG CHỦ</a></a>
+            </li>
+            <li onmouseenter="showMenu('menu1')" onmouseleave="hideMenu('menu2')">
                 <a href="#"><a href="https://baolucmang.github.io/CYBER/" target="_blank">BẠO LỰC MẠNG ▼</a></a>
                 <ul class="dropdown" id="menu1">
                     <li><a href="#">Bóng tối mạng xã hội: Câu chuyện về bạo lực từ xa</a></li>
@@ -273,7 +271,7 @@
                     <li><a href="#">Thống kê</a></li>
                          </ul>
             </li>
-            <li onmouseenter="showMenu('menu2')" onmouseleave="hideMenu('menu2')">
+            <li onmouseenter="showMenu('menu2')" onmouseleave="hideMenu('menu3')">
                 <a href="#"><a href="https://baolucmang.github.io/webphu3/#" target="_blank">NGUYÊN NHÂN ▼</a></a>
                 <ul class="dropdown" id="menu2">
                     <li><a href="#">Mặt Nạ Kẻ Tấn Công: Danh tính “anh hùng” bàn phím</a></li>
@@ -281,7 +279,7 @@
                     <li><a href="#">Góc nhìn của “người qua đường”</a></li>
                 </ul>
             </li>
-            <li onmouseenter="showMenu('menu3')" onmouseleave="hideMenu('menu3')">
+            <li onmouseenter="showMenu('menu3')" onmouseleave="hideMenu('menu4')">
                 <a href="#"><a href="https://baolucmang.github.io/webphu4/" target="_blank">HẬU QUẢ ▼</a></a>
                 <ul class="dropdown" id="menu3">
                     <li><a href="#">Đối với nạn nhân</a></li>
@@ -289,14 +287,14 @@
                     <li><a href="#">Đối với xã hội</a></li>
                 </ul>
             </li>
-<li onmouseenter="showMenu('menu4')" onmouseleave="hideMenu('menu4')">
+<li onmouseenter="showMenu('menu4')" onmouseleave="hideMenu('menu5')">
     <a href="#"><a href="https://baolucmang.github.io/webphu5/" target="_blank">GIẢI PHÁP ▼</a></a>
                 <ul class="dropdown" id="menu4">
                     <li><a href="#">Giải pháp phòng tránh bạo lực mạng</a></li>
                     <li><a href="#">Giải pháp khi bạo lực mạng xảy ra</a></li>
                 </ul>
             </li>
-<li onmouseenter="showMenu('menu5')" onmouseleave="hideMenu('menu5')">
+<li onmouseenter="showMenu('menu5')" onmouseleave="hideMenu('menu6')">
     <a href="#"><a href="https://baolucmang.github.io/webphu6/" target="_blank">LỜI KẾT ▼</a></a>
                 <ul class="dropdown" id="menu5">
                     <li><a href="#">Kết luận</a></li>
