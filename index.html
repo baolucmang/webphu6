@@ -569,6 +569,63 @@
         </div>   
     </div> 
 
+<style>
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+<body>
+    <div class="button-container">
+        <button id="prevBtn">⬅ Trước</button>
+        <button id="nextBtn">Sau ➡</button>
+    </div>
+
+    <script>
+        let pages = [
+            "https://baolucmang.github.io/12a12.nhomphongsu/",
+            "https://baolucmang.github.io/aboutus/",
+            "https://baolucmang.github.io/bongtoimangxahoi/",
+            "https://baolucmang.github.io/dinhnghia/",
+            "https://baolucmang.github.io/nguyennhan/",
+            "https://baolucmang.github.io/hauqua/",
+            "https://baolucmang.github.io/giaiphap/",
+            "https://baolucmang.github.io/webphu6/"
+        ];
+        
+        let currentIndex = localStorage.getItem('currentPageIndex') || 0;
+        currentIndex = parseInt(currentIndex);
+        
+        function updateButtons() {
+            document.getElementById("prevBtn").disabled = currentIndex <= 0;
+            document.getElementById("nextBtn").disabled = currentIndex >= pages.length - 1;
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                localStorage.setItem('currentPageIndex', currentIndex);
+                window.location.href = pages[currentIndex];
+            }
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", function() {
+            if (currentIndex < pages.length - 1) {
+                currentIndex++;
+                localStorage.setItem('currentPageIndex', currentIndex);
+                window.location.href = pages[currentIndex];
+            }
+        });
+        
+        updateButtons();
+    </script>
 
 
 
